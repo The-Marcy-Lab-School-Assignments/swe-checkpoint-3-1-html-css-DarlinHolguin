@@ -17,3 +17,87 @@ img {
 }
 
 /* Add your styles below */
+
+header {
+padding: 10px;
+border-bottom: ridge;
+border-color: lightgray;
+text-align: center;
+align-items: center;
+
+}
+
+
+body {
+  background-color: black;
+}
+
+#Instagram {
+  width: 100px;
+  color: white;
+  
+
+}
+
+#nav-links {
+display: flex;
+justify-content: right;
+
+
+
+}
+
+#nav-links li a {
+  color: white;
+  padding: 10px;
+  
+ 
+
+gap: 15px;
+font-size: 1.2rem;
+text-decoration: none;
+
+}
+
+#nav-links a:hover {
+  text-decoration: underline;
+}
+
+#Profile-photo {
+  padding: 40px;
+  border-radius: 50%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
+#Profile {
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#Profile-info {
+  display: flex;
+}
+
+.photos {
+min-width: 700px;
+max-width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+gap: 2%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  font-family: Arial, sans-serif;
+  border-color: lightgrey;
+  background-color: black;
+}
+
