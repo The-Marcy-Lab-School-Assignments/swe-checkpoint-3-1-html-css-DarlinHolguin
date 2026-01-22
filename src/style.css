@@ -19,11 +19,13 @@ img {
 /* Add your styles below */
 
 header {
-padding: 10px;
-border-bottom: ridge;
-border-color: lightgray;
-text-align: center;
-align-items: center;
+  display: flex;
+padding-bottom: 0px;
+padding-top: 10px;
+border-bottom: 1px solid #d1d1d1;
+justify-content: space-between;
+background-color: black;
+
 
 }
 
@@ -41,7 +43,7 @@ body {
 
 #nav-links {
 display: flex;
-justify-content: right;
+gap: 15px;
 
 
 
@@ -100,4 +102,5 @@ h4 {
   border-color: lightgrey;
   background-color: black;
 }
+
 
