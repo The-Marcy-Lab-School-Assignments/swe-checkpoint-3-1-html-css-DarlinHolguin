@@ -103,28 +103,28 @@ And use the following breakpoints to create a responsive design
 
 **HTML Structure:**
 
-- [ ] Uses semantic HTML elements (`header`, `main`, `footer`, `section`, `nav`)
-- [ ] Uses lists (`ul`, `li`) to represent repeating content (nav links, stats, posts)
-- [ ] Uses `figure` and `figcaption` for images with captions
+- [x] Uses semantic HTML elements (`header`, `main`, `footer`, `section`, `nav`)
+- [x] Uses lists (`ul`, `li`) to represent repeating content (nav links, stats, posts)
+- [x] Uses `figure` and `figcaption` for images with captions
 
 **CSS Layout:**
 
-- [ ] Uses Flexbox (`display: flex`) on at least 3 different elements
-- [ ] Uses CSS Grid (`display: grid`) for the posts section
-- [ ] Uses `gap` to create consistent spacing between elements
+- [x] Uses Flexbox (`display: flex`) on at least 3 different elements
+- [x] Uses CSS Grid (`display: grid`) for the posts section
+- [x] Uses `gap` to create consistent spacing between elements
 
 **Responsive Design:**
 
-- [ ] Uses media queries to create a responsive layout
-- [ ] Posts grid displays 1 column on mobile, 2 columns at 768px, 3 columns at 992px
-- [ ] Hero section layout changes between mobile (stacked) and desktop (side-by-side)
+- [x] Uses media queries to create a responsive layout
+- [x] Posts grid displays 1 column on mobile, 2 columns at 768px, 3 columns at 992px
+- [x] Hero section layout changes between mobile (stacked) and desktop (side-by-side)
 
 **General Styling:**
 
-- [ ] Passes the "eye test" (without looking at the code or inspecting closely, the page looks like it matches the design spec)
-- [ ] Uses CSS Variables to store colors and avoid repetition
-- [ ] Padding, margins, and gaps match the design specification
-- [ ] Navigation links underline on hover
+- [x] Passes the "eye test" (without looking at the code or inspecting closely, the page looks like it matches the design spec)
+- [x] Uses CSS Variables to store colors and avoid repetition
+- [x] Padding, margins, and gaps match the design specification
+- [x] Navigation links underline on hover
 
 ### Submission
 
