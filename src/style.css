@@ -16,4 +16,146 @@ img {
   width: 100%;
 }
 
+:root {
+  --color-background: black;
+  --color-text: #f5f5f5;
+  --font-family: Arial, sans-serif;
+}
+
 /* Add your styles below */
+
+body {
+  background-color: var(--color-background);
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-text);
+}
+
+#Instagram {
+  width: 100px;
+  color: var(--color-text);
+}
+
+#nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+#nav-links li a {
+  display: block;
+  padding: 10px;
+  color: var(--color-text);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+#nav-links a:hover {
+  text-decoration: underline;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 10px;
+}
+
+#Profile-photo {
+  display: block;
+  width: 300px;
+  height: 300px;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#Profile-info {
+  text-align: center;
+}
+
+#Profile-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#Profile-stats {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#Profile-stats b {
+  font-weight: bold;
+}
+
+#Profile-info p {
+  line-height: 1.5;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 40px;
+}
+
+.photos li img {
+  display: block;
+  border-radius: 4px;
+}
+
+.photos li figcaption {
+  margin-top: 8px;
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+@media (min-width: 768px) {
+  .photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .profile-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #Profile-info {
+    text-align: left;
+  }
+
+  #Profile-stats {
+    justify-content: flex-start;
+  }
+
+  #Profile-info p {
+    margin: 0;
+  }
+
+  .photos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

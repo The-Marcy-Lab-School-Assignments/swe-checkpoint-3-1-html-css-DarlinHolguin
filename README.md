@@ -27,12 +27,14 @@ In this checkpoint, you will be building and styling an **Instagram-style profil
 Use the previous assignment to see the patterns for how to structure your page and how to use flexbox/grid to style the page.
 
 **What's Provided:**
+
 - The design spec (`design-spec.png`)
 - Empty HTML file (`src/index.html`)
 - CSS reset (`src/style.css`)
 - Images in the `src/img/` folder (logo, profile picture, and cat photos for posts)
 
 **Your Task:**
+
 - Build the entire HTML content and structure
 - Write CSS to match the design specifications
 - Use CSS Grid and Flexbox for the appropriate sections
@@ -44,6 +46,7 @@ Use the previous assignment to see the patterns for how to structure your page a
 3. Refresh the browser frequently to see your changes
 
 **Tips:**
+
 - Use your browser's Developer Tools (right-click > Inspect) to debug CSS issues
 - Resize your browser window to test responsive behavior
 - If a style isn't working, check for typos and missing semicolons!
@@ -59,17 +62,20 @@ Use the spec diagram below and the following style guide to build your page (see
 Before you start coding, take a moment to analyze the design:
 
 **HTML Structure:**
+
 - What are the main sections of this page? How can you use semantic elements (`header`, `main`, `footer`, `section`, `nav`) to structure your HTML?
 - What repeating patterns do you see? How might you use lists (`ul`, `li`) to represent them?
 - Where do you see images with captions? What HTML element is best for that?
 
 **Layout Strategy:**
 
-You *must* use both flexbox and grid in this project.
+You _must_ use both flexbox and grid in this project.
+
 - Where do you see elements arranged in a single row or column? These are good candidates for **Flexbox**.
 - Where do you see elements arranged in a two-dimensional grid pattern (rows AND columns)? These are good candidates for **CSS Grid**.
 
 **Responsive Design:**
+
 - How is the layout different for mobile and desktop screens?
 
 ### Style Guide
@@ -81,6 +87,7 @@ Use the following fonts and colors for this project:
 - Background color: `black`
 
 And use the following breakpoints to create a responsive design
+
 - Mobile-first design with 1 column
 - At 768px switch to 2 columns
 - At 992px switch to 3 columns
@@ -95,29 +102,34 @@ And use the following breakpoints to create a responsive design
 ### Technical Requirements
 
 **HTML Structure:**
-- [ ] Uses semantic HTML elements (`header`, `main`, `footer`, `section`, `nav`)
-- [ ] Uses lists (`ul`, `li`) to represent repeating content (nav links, stats, posts)
-- [ ] Uses `figure` and `figcaption` for images with captions
+
+- [x] Uses semantic HTML elements (`header`, `main`, `footer`, `section`, `nav`)
+- [x] Uses lists (`ul`, `li`) to represent repeating content (nav links, stats, posts)
+- [x] Uses `figure` and `figcaption` for images with captions
 
 **CSS Layout:**
-- [ ] Uses Flexbox (`display: flex`) on at least 3 different elements
-- [ ] Uses CSS Grid (`display: grid`) for the posts section
-- [ ] Uses `gap` to create consistent spacing between elements
+
+- [x] Uses Flexbox (`display: flex`) on at least 3 different elements
+- [x] Uses CSS Grid (`display: grid`) for the posts section
+- [x] Uses `gap` to create consistent spacing between elements
 
 **Responsive Design:**
-- [ ] Uses media queries to create a responsive layout
-- [ ] Posts grid displays 1 column on mobile, 2 columns at 768px, 3 columns at 992px
-- [ ] Hero section layout changes between mobile (stacked) and desktop (side-by-side)
+
+- [x] Uses media queries to create a responsive layout
+- [x] Posts grid displays 1 column on mobile, 2 columns at 768px, 3 columns at 992px
+- [x] Hero section layout changes between mobile (stacked) and desktop (side-by-side)
 
 **General Styling:**
-- [ ] Passes the "eye test" (without looking at the code or inspecting closely, the page looks like it matches the design spec)
-- [ ] Uses CSS Variables to store colors and avoid repetition
-- [ ] Padding, margins, and gaps match the design specification
-- [ ] Navigation links underline on hover
+
+- [x] Passes the "eye test" (without looking at the code or inspecting closely, the page looks like it matches the design spec)
+- [x] Uses CSS Variables to store colors and avoid repetition
+- [x] Padding, margins, and gaps match the design specification
+- [x] Navigation links underline on hover
 
 ### Submission
 
 When you are finished:
+
 1. Save all your files
 2. Commit your changes with a descriptive message
 3. Push to your repository
@@ -153,6 +165,7 @@ Color values can be: named colors (`red`, `blue`), hex codes (`#FF5733`), or RGB
 **CSS Variables** are reusable values you define once and use throughout your CSS. This is helpful for consistent colors, fonts, and easy updates.
 
 **Example:**
+
 ```css
 :root {
   --color-background: #181818;
@@ -163,6 +176,7 @@ Color values can be: named colors (`red`, `blue`), hex codes (`#FF5733`), or RGB
 ```
 
 **Usage:**
+
 ```css
 body {
   background: var(--color-background);
@@ -190,6 +204,7 @@ Define your variables at the top of your `style.css` inside the `:root` selector
 | `border-radius`                                              | Rounds corners               | `border-radius: 8px;`             |
 
 **Shorthand for padding/margin:**
+
 - `padding: 10px;` → all sides
 - `padding: 10px 20px;` → top/bottom, left/right
 
@@ -225,11 +240,11 @@ a:hover {
 
 ### Grid
 
-| Property                | What It Does                     | Example                             |
-| ----------------------- | -------------------------------- | ----------------------------------- |
-| `display: grid`         | Makes the element a grid         | `display: grid;`                    |
-| `grid-template-columns` | Defines column sizes             | `grid-template-columns: 1fr 1fr;`   |
-| `gap`                   | Space between grid items         | `gap: 20px;`                        |
+| Property                | What It Does             | Example                           |
+| ----------------------- | ------------------------ | --------------------------------- |
+| `display: grid`         | Makes the element a grid | `display: grid;`                  |
+| `grid-template-columns` | Defines column sizes     | `grid-template-columns: 1fr 1fr;` |
+| `gap`                   | Space between grid items | `gap: 20px;`                      |
 
 **The `fr` unit** divides available space into fractions. `1fr 1fr 1fr` creates 3 equal columns.
 
